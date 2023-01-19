@@ -560,11 +560,6 @@ body{
     body{
         background-image: url('images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg.png');
         background-repeat: no-repeat;
-        position: relative;
-    }
-    
-    html, body{
-        overflow-x: hidden;
     }
 
     .name{
