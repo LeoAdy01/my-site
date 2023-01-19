@@ -1,0 +1,321 @@
+:root{
+    --hover:#ff7070;
+    --font-primary: 'Oswald', sans-serif;
+    --font-secondary:"DM Sans", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-color: black;
+    height: 200px;
+
+}
+
+.right{
+    list-style-type: none;
+    text-align: left;
+    color: white;
+}
+
+.right > li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.4rem;
+    top: -26.5px;
+    left: 562px;
+    font-family: 'Anek Telugu';
+}
+
+.right > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.onHover::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 42px;
+    transition: 0.3s;
+}
+
+.onHover:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover:hover::after{
+    width: 83%;
+}
+
+.onHover1::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 42px;
+    transition: 0.3s;
+}
+
+.onHover1:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover1:hover::after{
+    width: 78.2%;
+}
+
+.onHover2::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 42px;
+    transition: 0.3s;
+}
+
+.onHover2:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover2:hover::after{
+    width: 71%;
+}
+
+.onHover3::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 42px;
+    transition: 0.3s;
+}
+
+.onHover3:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover3:hover::after{
+    width: 68%;
+}
+
+.name{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Archivo Black';
+    position: relative;
+    left: 312px;
+    top: 29px;
+}
+
+.name:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.active, .active1, .active2, .active3{
+    color: var(--hover) !important;
+}
+
+.onHover4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 42px;
+    transition: 0.3s;
+}
+
+.onHover4:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover4:hover::after{
+    width: 68%;
+}
+
+.active1::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 78.2%;   
+    height: 3px;
+    left: 20px;
+    top: 42px;
+}
+
+.title{
+    font-family: var(--font-primary);
+    color: white;
+    font-size: 3.3rem;
+    position: relative;
+    left: 315px;
+    top: 75px;
+    text-transform: uppercase;
+}
+
+.changes-part{
+    width: 1920px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    top: 161px;
+    left: -8px;
+}
+
+.changes{
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    color: black;
+    font-size: 3.5rem;
+    position: relative;
+    top: 155px;
+    left: 315px;
+}
+
+.changes-button{
+    background-color: #ff1010;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 45px 15px 45px;
+    position: relative;
+    top: 185px;
+    left: 315px;
+}
+
+.changes-button:hover{
+    background-color: #790909;
+    transition: 0.3s
+}
+
+.footer{
+    width: 1920px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    left: -8px;
+    top: 100px;
+}
+
+.hours{
+    font-family: var(--font-primary);
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    position: relative;
+    left: 315px;
+    top: 80px;
+}
+
+.schedule, .program{
+    font-family: var(--font-secondary);
+    color: white;
+    position: relative;
+    left: 315px;
+    font-size: 1.1rem;
+    top: 85px;
+}
+
+.address-h1{
+    font-family: var(--font-primary);
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: -73px;
+    left: 995px;
+    font-size: 1.6rem;
+}
+
+.adresa{
+    font-family: var(--font-secondary);
+    color: white;
+    position: relative;
+    left: 995px;
+    font-size: 1.1rem;
+    top: -73px;
+}
+
+.fa-facebook{
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 405px;
+}
+
+.fa-instagram{
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 475px;
+}
+
+.fa-twitter{
+    color: white;
+    position: relative;
+    left: 263px;
+    top: 100px;
+}
+
+.book{
+    background-color: #ff1010;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 35px 15px 35px;
+    position: relative;
+    top: -85px;
+    left: 315px;
+}
+
+.book:hover{
+    background-color: #790909; ;
+    transition: 0.3s;
+}
+
+.definition{
+    color: white;
+    font-size: 1.1rem;
+    font-family: var(--font-secondary);
+    width: 530px;
+    position: relative;
+    left: 315px;
+    top: 120px;
+}
+
+
+.lift1{
+    position: relative;
+    left: 963px;
+    top: -230px;
+}
