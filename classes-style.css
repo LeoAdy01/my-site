@@ -340,3 +340,1125 @@ body{
     left: 263px;
     top: 100px;
 }
+
+@media screen and (max-width:360px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -325px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 310px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -170px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -180px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width:375px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -325px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 325px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -170px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -180px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:384px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -325px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 335px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 25px;
+        top: -70px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -170px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -180px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}
+
+@media screen and (min-width:385px) and (max-width:390px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -275px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 340px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -130px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -140px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:414px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -280px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 360px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 26px;
+        top: -30px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -130px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -140px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}
+
+@media screen and (min-width:424px) and (max-width:428px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -265px;
+    }
+
+    .classes{
+        font-size: 2.3rem;
+    }
+
+    .all-classes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px; 
+        position: relative;
+        top: -140px;
+        left: 0px;
+    }
+
+    .lifting-photo, .bodybuilding-photo, .air-yoga-photo, .cardio-box-photo, .cardio-photo, .press-and-back-photo{
+        width: 380px;
+    }
+
+    .lifting{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .lifting-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .air-yoga{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .air-yoga-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio-box{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .cardio-box-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .cardio{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .cardio-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .press-and-back{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .press-and-back-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .body-building{
+        position: relative;
+        left: 25px;
+        top: -30px;
+    }
+
+    .bodybuilding-text{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    
+    .changes-part{
+        position: relative;
+        top: -130px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: -140px;
+        height: 200px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+}

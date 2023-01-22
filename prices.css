@@ -334,3 +334,52 @@ body{
     left: 263px;
     top: 100px;
 }
+
+@media screen and (max-width:360px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-image: url('images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg.png');
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 47px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -266px;
+        top: -305px;
+        z-index: 1;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+     
+    .basic-price{
+        position: absolute;
+        left: 49px;
+        z-index: 1;
+        background-color: black;
+    }
+}
