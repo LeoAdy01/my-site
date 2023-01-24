@@ -315,3 +315,650 @@ textarea:focus{
     left: 263px;
     top: 100px;
 }
+
+@media screen and (max-width:360px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -310px;
+    }
+
+    input{
+        position: relative;
+        left: -287px;
+        top: -320px;
+        width: 300px;
+    }
+
+    label{
+        position: relative;
+        left: -287px;
+        top: -322px;
+    }
+
+    textarea{
+        position: relative;
+        left: -287px;
+        top: -320px;
+        width: 300px;
+    }
+
+    .submit{
+        position: relative;
+        left: -222px;
+        top: -289px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
+
+
+@media screen and (min-width:361px) and (max-width:375px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -310px;
+    }
+
+    input{
+        position: relative;
+        left: -290px;
+        top: -320px;
+        width: 320px;
+    }
+
+    label{
+        position: relative;
+        left: -290px;
+        top: -322px;
+    }
+
+    textarea{
+        position: relative;
+        left: -290px;
+        top: -320px;
+        width: 320px;
+    }
+
+    .submit{
+        position: relative;
+        left: -215px;
+        top: -260px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
+
+
+@media screen and (min-width:376px) and (max-width:384px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -310px;
+    }
+
+    input{
+        position: relative;
+        left: -290px;
+        top: -320px;
+        width: 330px;
+    }
+
+    label{
+        position: relative;
+        left: -290px;
+        top: -322px;
+    }
+
+    textarea{
+        position: relative;
+        left: -290px;
+        top: -320px;
+        width: 330px;
+    }
+
+    .submit{
+        position: relative;
+        left: -210px;
+        top: -260px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
+
+
+@media screen and (min-width:385px) and (max-width:390px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -270px;
+    }
+
+    input{
+        position: relative;
+        left: -290px;
+        top: -280px;
+        width: 338px;
+    }
+
+    label{
+        position: relative;
+        left: -290px;
+        top: -282px;
+    }
+
+    textarea{
+        position: relative;
+        left: -290px;
+        top: -280px;
+        width: 338px;
+    }
+
+    .submit{
+        position: relative;
+        left: -210px;
+        top: -230px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
+
+
+@media screen and (min-width:412px) and (max-width:414px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -280px;
+    }
+
+    input{
+        position: relative;
+        left: -290px;
+        top: -290px;
+        width: 360px;
+    }
+
+    label{
+        position: relative;
+        left: -290px;
+        top: -292px;
+    }
+
+    textarea{
+        position: relative;
+        left: -290px;
+        top: -290px;
+        width: 360px;
+    }
+
+    .submit{
+        position: relative;
+        left: -197px;
+        top: -245px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
+
+
+@media screen and (min-width:424px) and (max-width:428px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -270px;
+    }
+
+    input{
+        position: relative;
+        left: -290px;
+        top: -280px;
+        width: 375px;
+    }
+
+    label{
+        position: relative;
+        left: -290px;
+        top: -282px;
+    }
+
+    textarea{
+        position: relative;
+        left: -290px;
+        top: -280px;
+        width: 375px;
+    }
+
+    .submit{
+        position: relative;
+        left: -190px;
+        top: -230px;
+    }
+
+    .footer{
+        position: relative;
+        top: -50px;
+        height: 250px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -50px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 120px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 223px;
+    }
+}
