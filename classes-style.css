@@ -661,7 +661,7 @@ body{
 
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
 
     .onHover2{
@@ -975,12 +975,11 @@ body{
     .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
         display: none;
     }
-
+                  
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
-
     .onHover2{
         position: relative;
         left: -185px;
@@ -1292,9 +1291,10 @@ body{
         display: none;
     }
 
+                  
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
 
     .onHover2{
@@ -1607,10 +1607,10 @@ body{
     .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
         display: none;
     }
-
+              
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
 
     .onHover2{
@@ -1923,10 +1923,10 @@ body{
     .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
         display: none;
     }
-
+              
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
 
     .onHover2{
@@ -2239,10 +2239,10 @@ body{
     .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
         display: none;
     }
-
+              
     .onHover{
         position: absolute;
-        top: -27px !important;
+        top: -26.2px !important;
     }
 
     .onHover2{
