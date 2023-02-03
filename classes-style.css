@@ -410,7 +410,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:110px;
+    height:70px;
     position: relative;
     top: -15px;
 }
