@@ -11,16 +11,25 @@
 </head>
 <body>
    <header>
-    <a href="index.html"><img src="https://assets.zyrosite.com/bronxltdlm/Bronx-Club-Ygx032OGLyhZJDG6.svg" width="200px" class="name"></a>
-    <nav class="nav-bar">
-        <ul class="right">
-            <li class="classes"><a href="classes.html" class="onHover4">Classes</a></li>
-            <li class="home"><a href="personalWorkouts.html" class="onHover active">Personal Workouts</a></li>
-            <li class="about"><a href="prices.html" class="onHover1">Prices & Plans</a></li>
-            <li class="services"><a href="schedule.html" class="onHover2">Schedule</a></li>
-            <li class="contact"><a href="sign-up.html" class="onHover3">Sign up</a></li>
-        </ul>
-    </nav>
+    <nav class="nav">
+      <a href="index.html"><img src="https://assets.zyrosite.com/bronxltdlm/Bronx-Club-Ygx032OGLyhZJDG6.svg" width="200px" class="name"></a>
+      <div class="nav-bar right" id="mainListDiv">
+        <div class="navbar-media"></div>
+           <a href="classes.html" class="onHover4">Classes</a>
+           <a href="personalWorkouts.html" class="onHover active5">Personal Workouts</a>
+           <a href="prices.html" class="onHover1">Prices & Plans</a>
+           <a href="schedule.html" class="onHover2">Schedule</a>
+           <a href="sign-up.html" class="onHover3">Sign up</a>
+        </div>
+     </div>
+     <div class="media_button">
+        <button class="main_media_button" id="mediaButton" onclick="myFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+  </nav>
    </header>
    <div class="welcome-part">
      <h1 class="title">Personal Trainers</h1>
@@ -66,4 +75,5 @@
    </div>
  </div>
 </body>
+<script src="script.js"></script>
 </html>

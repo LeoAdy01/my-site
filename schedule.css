@@ -23,20 +23,16 @@ body{
     color: white;
 }
 
-.right > li{
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.4rem;
-    top: -26.5px;
-    left: 562px;
-    font-family: 'Anek Telugu';
-}
-
-.right > li > a{
+.right > a{
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    top: -26.5px;
+    left: 605px;
+    font-family: 'Anek Telugu';
 }
 
 .onHover::after{
@@ -46,7 +42,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -66,7 +62,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -86,7 +82,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -106,7 +102,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -116,6 +112,27 @@ body{
 }
 
 .onHover3:hover::after{
+    width: 68%;
+}
+
+
+.onHover4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 55px;
+    transition: 0.3s;
+}
+
+.onHover4:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover4:hover::after{
     width: 68%;
 }
 
@@ -136,28 +153,8 @@ body{
     transition: 0.3s;
 }
 
-.active, .active1, .active2, .active3{
+.active5, .active1, .active2, .active3{
     color: var(--hover) !important;
-}
-
-.onHover4::after{
-    content: "";
-    position: absolute;
-    background-color: var(--hover);
-    width: 0;
-    height: 3px;
-    left: 20px;
-    top: 42px;
-    transition: 0.3s;
-}
-
-.onHover4:hover{
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-.onHover4:hover::after{
-    width: 68%;
 }
 
 .active2::after{
@@ -167,7 +164,7 @@ body{
     width: 71%;   
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
 }
 
 .title{
@@ -330,6 +327,92 @@ body{
     top: 100px;
 }
 
+
+.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 23px;
+    top: 12px;
+    display: none;
+}
+
+.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+.media_button button.active{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding-top: 5px;
+    position: relative;
+    top: -15px;
+}
+
+.hide{
+    display: none;
+}
+
 @media screen and (max-width:360px){
     :root{
         --hover:#ff7070;
@@ -362,7 +445,7 @@ body{
     .welcome-part{
         position: relative;
         left: -292px;
-        top: -325px;
+        top: -230px;
     }
 
     .title, .day{
@@ -371,7 +454,7 @@ body{
 
     .schedule{
         position: relative;
-        top: -200px;
+        top: -120px;
         left: 0px;
     }
 
@@ -400,7 +483,7 @@ body{
 
     .changes-part{
         position: relative;
-        top: 60px;
+        top: 150px;
         background-color: white;
         height: 300px;
     }
@@ -423,7 +506,7 @@ body{
 
     .footer{
         position: relative;
-        top: 60px;
+        top: 150px;
         height: 250px;
     }
 
@@ -461,8 +544,179 @@ body{
         position: relative;
         top: 223px;
     }
-}
+    
+    .media_button{
+        display: block;
+    }
 
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 60px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 367px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+
+}
 @media screen and (min-width:361px) and (max-width:375px){
     :root{
         --hover:#ff7070;
@@ -499,12 +753,12 @@ body{
     .welcome-part{
         position: relative;
         left: -292px;
-        top: -325px;
+        top: -230px;
     }
 
     .schedule{
         position: relative;
-        top: -200px;
+        top: -110px;
         left: 0px;
     }
 
@@ -533,7 +787,7 @@ body{
 
     .changes-part{
         position: relative;
-        top: 60px;
+        top: 160px;
         background-color: white;
         height: 300px;
     }
@@ -556,7 +810,7 @@ body{
 
     .footer{
         position: relative;
-        top: 60px;
+        top: 160px;
         height: 250px;
     }
 
@@ -594,6 +848,136 @@ body{
         position: relative;
         top: 223px;
     }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 382px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+
 }
 
 @media screen and (min-width:376px) and (max-width:384px){
@@ -632,12 +1016,12 @@ body{
     .welcome-part{
         position: relative;
         left: -292px;
-        top: -325px;
+        top: -230px;
     }
 
     .schedule{
         position: relative;
-        top: -200px;
+        top: -100px;
         left: 0px;
     }
 
@@ -666,7 +1050,7 @@ body{
 
     .changes-part{
         position: relative;
-        top: 60px;
+        top: 160px;
         background-color: white;
         height: 300px;
     }
@@ -689,7 +1073,7 @@ body{
 
     .footer{
         position: relative;
-        top: 60px;
+        top: 160px;
         height: 250px;
     }
 
@@ -726,6 +1110,135 @@ body{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 391px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -861,6 +1374,135 @@ body{
         position: relative;
         top: 223px;
     }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 397px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
 }
 
 @media screen and (min-width:412px) and (max-width:414px){
@@ -899,12 +1541,12 @@ body{
     .welcome-part{
         position: relative;
         left: -292px;
-        top: -260px;
+        top: -230px;
     }
 
     .schedule{
         position: relative;
-        top: -200px;
+        top: -150px;
         left: 0px;
     }
 
@@ -934,7 +1576,7 @@ body{
 
     .changes-part{
         position: relative;
-        top: 120px;
+        top: 180px;
         background-color: white;
         height: 300px;
     }
@@ -957,7 +1599,7 @@ body{
 
     .footer{
         position: relative;
-        top: 120px;
+        top: 180px;
         height: 250px;
     }
 
@@ -994,6 +1636,135 @@ body{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 421px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -1033,12 +1804,12 @@ body{
     .welcome-part{
         position: relative;
         left: -292px;
-        top: -260px;
+        top: -230px;
     }
 
     .schedule{
         position: relative;
-        top: -200px;
+        top: -150px;
         left: 0px;
     }
 
@@ -1068,7 +1839,7 @@ body{
 
     .changes-part{
         position: relative;
-        top: 120px;
+        top: 180px;
         background-color: white;
         height: 300px;
     }
@@ -1091,7 +1862,7 @@ body{
 
     .footer{
         position: relative;
-        top: 120px;
+        top: 180px;
         height: 250px;
     }
 
@@ -1128,5 +1899,134 @@ body{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 435px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active2{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }

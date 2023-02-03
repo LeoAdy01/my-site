@@ -23,20 +23,16 @@ body{
     color: white;
 }
 
-.right > li{
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.4rem;
-    top: -26.5px;
-    left: 562px;
-    font-family: 'Anek Telugu';
-}
-
-.right > li > a{
+.right > a{
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    top: -26.5px;
+    left: 605px;
+    font-family: 'Anek Telugu';
 }
 
 .onHover::after{
@@ -46,7 +42,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -66,7 +62,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -86,7 +82,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -106,7 +102,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -116,6 +112,27 @@ body{
 }
 
 .onHover3:hover::after{
+    width: 68%;
+}
+
+
+.onHover4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 55px;
+    transition: 0.3s;
+}
+
+.onHover4:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover4:hover::after{
     width: 68%;
 }
 
@@ -136,29 +153,10 @@ body{
     transition: 0.3s;
 }
 
-.active, .active1, .active2, .active3{
+.active5, .active1, .active2, .active3{
     color: var(--hover) !important;
 }
 
-.onHover4::after{
-    content: "";
-    position: absolute;
-    background-color: var(--hover);
-    width: 0;
-    height: 3px;
-    left: 20px;
-    top: 42px;
-    transition: 0.3s;
-}
-
-.onHover4:hover{
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-.onHover4:hover::after{
-    width: 68%;
-}
 
 .active3::after{
     content: "";
@@ -167,7 +165,7 @@ body{
     width: 68%; 
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
 }
 
 .title{
@@ -316,6 +314,93 @@ textarea:focus{
     top: 100px;
 }
 
+.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 23px;
+    top: 12px;
+    display: none;
+}
+
+.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+.media_button button.active{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding-top: 5px;
+    position: relative;
+    top: -15px;
+}
+    
+
+
+.hide{
+    display: none;
+}
+
 @media screen and (max-width:360px){
     :root{
         --hover:#ff7070;
@@ -352,33 +437,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -310px;
+        top: -240px;
     }
 
     input{
         position: relative;
         left: -287px;
-        top: -320px;
+        top: -260px;
         width: 300px;
     }
 
     label{
         position: relative;
         left: -287px;
-        top: -322px;
+        top: -262px;
     }
 
     textarea{
         position: relative;
         left: -287px;
-        top: -320px;
+        top: -260px;
         width: 300px;
     }
 
     .submit{
         position: relative;
         left: -222px;
-        top: -289px;
+        top: -222px;
     }
 
     .footer{
@@ -420,6 +505,135 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 367px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -460,33 +674,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -310px;
+        top: -240px;
     }
 
     input{
         position: relative;
         left: -290px;
-        top: -320px;
+        top: -250px;
         width: 320px;
     }
 
     label{
         position: relative;
         left: -290px;
-        top: -322px;
+        top: -252px;
     }
 
     textarea{
         position: relative;
         left: -290px;
-        top: -320px;
+        top: -250px;
         width: 320px;
     }
 
     .submit{
         position: relative;
         left: -215px;
-        top: -260px;
+        top: -200px;
     }
 
     .footer{
@@ -528,6 +742,135 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 382px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -568,33 +911,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -310px;
+        top: -230px;
     }
 
     input{
         position: relative;
         left: -290px;
-        top: -320px;
+        top: -240px;
         width: 330px;
     }
 
     label{
         position: relative;
         left: -290px;
-        top: -322px;
+        top: -242px;
     }
 
     textarea{
         position: relative;
         left: -290px;
-        top: -320px;
+        top: -240px;
         width: 330px;
     }
 
     .submit{
         position: relative;
         left: -210px;
-        top: -260px;
+        top: -200px;
     }
 
     .footer{
@@ -636,6 +979,135 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 391px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -676,33 +1148,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -270px;
+        top: -220px;
     }
 
     input{
         position: relative;
         left: -290px;
-        top: -280px;
+        top: -230px;
         width: 338px;
     }
 
     label{
         position: relative;
         left: -290px;
-        top: -282px;
+        top: -232px;
     }
 
     textarea{
         position: relative;
         left: -290px;
-        top: -280px;
+        top: -230px;
         width: 338px;
     }
 
     .submit{
         position: relative;
         left: -210px;
-        top: -230px;
+        top: -190px;
     }
 
     .footer{
@@ -744,6 +1216,135 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 397px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -784,33 +1385,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -280px;
+        top: -220px;
     }
 
     input{
         position: relative;
         left: -290px;
-        top: -290px;
+        top: -230px;
         width: 360px;
     }
 
     label{
         position: relative;
         left: -290px;
-        top: -292px;
+        top: -232px;
     }
 
     textarea{
         position: relative;
         left: -290px;
-        top: -290px;
+        top: -230px;
         width: 360px;
     }
 
     .submit{
         position: relative;
         left: -197px;
-        top: -245px;
+        top: -190px;
     }
 
     .footer{
@@ -852,6 +1453,135 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 421px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }
 
@@ -892,33 +1622,33 @@ textarea:focus{
     .welcome-part{
         position: relative;
         left: -290px;
-        top: -270px;
+        top: -220px;
     }
 
     input{
         position: relative;
         left: -290px;
-        top: -280px;
+        top: -230px;
         width: 375px;
     }
 
     label{
         position: relative;
         left: -290px;
-        top: -282px;
+        top: -232px;
     }
 
     textarea{
         position: relative;
         left: -290px;
-        top: -280px;
+        top: -230px;
         width: 375px;
     }
 
     .submit{
         position: relative;
         left: -190px;
-        top: -230px;
+        top: -190px;
     }
 
     .footer{
@@ -960,5 +1690,134 @@ textarea:focus{
     .fa-brands{
         position: relative;
         top: 223px;
+    }
+
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 435px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active3{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active3::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
     }
 }

@@ -16,27 +16,22 @@ body{
 
 }
 
-
 .right{
     list-style-type: none;
     text-align: left;
     color: white;
 }
 
-.right > li{
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.4rem;
-    top: -26.5px;
-    left: 562px;
-    font-family: 'Anek Telugu';
-}
-
-.right > li > a{
+.right > a{
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    top: -26.5px;
+    left: 605px;
+    font-family: 'Anek Telugu';
 }
 
 .onHover::after{
@@ -46,7 +41,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -66,7 +61,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -86,7 +81,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -106,7 +101,7 @@ body{
     width: 0;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
     transition: 0.3s;
 }
 
@@ -119,6 +114,26 @@ body{
     width: 68%;
 }
 
+
+.onHover4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--hover);
+    width: 0;
+    height: 3px;
+    left: 20px;
+    top: 55px;
+    transition: 0.3s;
+}
+
+.onHover4:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.onHover4:hover::after{
+    width: 68%;
+}
 
 .name{
     text-decoration: none;
@@ -136,38 +151,18 @@ body{
     transition: 0.3s;
 }
 
-.active, .active1, .active2, .active3{
+.active5, .active1, .active2, .active3{
     color: var(--hover) !important;
 }
 
-.onHover4::after{
-    content: "";
-    position: absolute;
-    background-color: var(--hover);
-    width: 0;
-    height: 3px;
-    left: 20px;
-    top: 42px;
-    transition: 0.3s;
-}
-
-.onHover4:hover{
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-.onHover4:hover::after{
-    width: 68%;
-}
-
-.active::after{
+.active5::after{
     content: "";
     position: absolute;
     background-color: var(--hover);
     width: 83%;
     height: 3px;
     left: 20px;
-    top: 42px;
+    top: 55px;
 }
 
 .title{
@@ -400,4 +395,2039 @@ body{
     position: relative;
     left: 263px;
     top: 100px;
+}
+
+.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 23px;
+    top: 12px;
+    display: none;
+}
+
+.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+.media_button button.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding-top: 5px;
+    position: relative;
+    top: -15px;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:360px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        position: relative;
+        height: 100%;
+    }
+
+    html,body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -290px;
+        top: -240px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 307px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 350px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 370px;
+        width: 300px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 430px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 180px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 307px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 375px;
+    }
+
+    .description-john{
+        width: 300px;
+        position: relative;
+        top: 400px;
+    }
+
+    .second{
+        position: relative;
+        top: 455px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 220px;
+    }
+
+    .inna{
+        position: relative;
+        top: 550px;
+    }
+
+    .third-trainer-photo{
+        width: 307px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 300px;
+        top: 580px;
+    }
+
+    .third{
+        position: relative;
+        top: 635px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 640px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 640px;
+        height: 240px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 367px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:361px) and (max-width:375px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -34px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -225px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .first-trainer{
+        position: relative;
+        top: 60px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 322px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 350px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 370px;
+        width: 315px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 430px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 280px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 322px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 375px;
+    }
+
+    .description-john{
+        width: 315px;
+        position: relative;
+        top: 400px;
+    }
+
+    .second{
+        position: relative;
+        top: 455px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 380px;
+    }
+
+    .inna{
+        position: relative;
+        top: 550px;
+    }
+
+    .third-trainer-photo{
+        width: 322px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 315px;
+        top: 580px;
+    }
+
+    .third{
+        position: relative;
+        top: 635px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 670px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 670px;
+        height: 330px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 382px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:376px) and (max-width:384px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -33px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -235px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .first-trainer{
+        position: relative;
+        top: 60px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 331px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 310px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 330px;
+        width: 330px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 390px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 280px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 331px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 335px;
+    }
+
+    .description-john{
+        width: 330px;
+        position: relative;
+        top: 360px;
+    }
+
+    .second{
+        position: relative;
+        top: 415px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 330px;
+    }
+
+    .inna{
+        position: relative;
+        top: 530px;
+    }
+
+    .third-trainer-photo{
+        width: 331px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 330px;
+        top: 550px;
+    }
+
+    .third{
+        position: relative;
+        top: 605px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 620px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 620px;
+        height: 330px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 391px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+}
+
+@media screen and (min-width:385px) and (max-width:390px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -33px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -235px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .first-trainer{
+        position: relative;
+        top: 60px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 337px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 310px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 330px;
+        width: 334px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 390px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 280px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 337px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 335px;
+    }
+
+    .description-john{
+        width: 333px;
+        position: relative;
+        top: 360px;
+    }
+
+    .second{
+        position: relative;
+        top: 415px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 330px;
+    }
+
+    .inna{
+        position: relative;
+        top: 530px;
+    }
+
+    .third-trainer-photo{
+        width: 337px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 333px;
+        top: 550px;
+    }
+
+    .third{
+        position: relative;
+        top: 605px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 620px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 620px;
+        height: 330px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 397px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:414px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -33px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -235px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .first-trainer{
+        position: relative;
+        top: 60px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 361px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 310px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 330px;
+        width: 356px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 390px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 280px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 361px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 335px;
+    }
+
+    .description-john{
+        width: 356px;
+        position: relative;
+        top: 360px;
+    }
+
+    .second{
+        position: relative;
+        top: 415px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 330px;
+    }
+
+    .inna{
+        position: relative;
+        top: 530px;
+    }
+
+    .third-trainer-photo{
+        width: 361px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 356px;
+        top: 550px;
+    }
+
+    .third{
+        position: relative;
+        top: 605px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 620px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 620px;
+        height: 330px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 421px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+}
+
+@media screen and (min-width:424px) and (max-width:428px){
+    :root{
+        --hover:#ff7070;
+        --font-primary: 'Oswald', sans-serif;
+        --font-secondary:"DM Sans", sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .name{
+        position: relative;
+        left: 25px;
+        top: -33px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-part{
+        position: relative;
+        left: -292px;
+        top: -235px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .first-trainer{
+        position: relative;
+        top: 60px;
+    }
+
+    .first-trainer-photo{
+        position: relative;
+        left: -289px;
+        height: 450px;
+        top: -500px;
+        width: 375px;
+    }
+  
+    .heron{
+        position: relative;
+        left: -289px;
+        top: 310px;
+    }
+
+    .description-heron{
+        position: relative;
+        left: -289px;
+        top: 330px;
+        width: 365px;
+    }
+
+    .first{
+        position: relative;
+        left: -289px;
+        top: 390px;
+    }
+
+    .second-trainer{
+        position: relative;
+        left: -289px;
+        top: 280px;
+    }
+
+    .second-trainer-photo{
+        position: relative;
+        left: 315px;
+        top: -450px;
+        width: 375px;
+        height: 450px;
+    }
+
+    .john{
+        position: relative;
+        top: 335px;
+    }
+
+    .description-john{
+        width: 365px;
+        position: relative;
+        top: 360px;
+    }
+
+    .second{
+        position: relative;
+        top: 415px;
+    }
+
+    .third-trainer{
+        position: relative;
+        left: 26px;
+        top: 330px;
+    }
+
+    .inna{
+        position: relative;
+        top: 530px;
+    }
+
+    .third-trainer-photo{
+        width: 375px;
+        height: 450px;
+        position: relative;
+        left: 0px;
+        top: -250px;
+    }
+
+    .description-inna{
+        position: relative;
+        width: 365px;
+        top: 550px;
+    }
+
+    .third{
+        position: relative;
+        top: 605px;
+    }
+
+    .changes-part{
+        position: relative;
+        top: 620px;
+        background-color: white;
+        height: 300px;
+    }
+
+    .changes{
+        position: relative;
+        left: 32px;
+        top: 50px;
+        font-size: 2.2rem;
+        width: 300px;
+    }
+
+    .changes-button{
+        position: relative;
+        left: 32px;
+        top: 90px;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer{
+        position: relative;
+        top: 620px;
+        height: 330px;
+    }
+
+    .work-hours{
+        position: relative;
+        left: -270px;
+        top: -30px;
+    }
+
+    .hours{
+        font-size: 1.4rem;
+    }
+
+    .program{
+        font-size: 1rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .address{
+        position: relative;
+        left: -949px;
+        top: 150px;
+    }
+
+    .address-h1{
+        font-size: 1.4rem;
+    }
+
+    .adresa{
+        font-size: 1rem;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 253px;
+    }
+    .nav-bar{
+        position: relative;
+        left: -612px;
+        top: -107px;
+        display: block;
+        z-index: 1;
+       
+    }
+
+    .right-bar{
+        transform: rotate(45deg);
+        position: relative;
+        top: -132px !important;
+    }
+
+    .left-bar{
+        transform: rotate(-45deg);
+    }
+
+    .right > a{
+        color: white;
+        background-color: rgb(37, 37, 37);
+        width: 435px;
+        text-align: center;
+        height: 80px;
+    }
+
+    .right a:not(:last-child){
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .onHover1{
+        position: relative;
+        top: 20px;
+    }
+    
+    .onHover1:hover, .onHover2:hover, .onHover3:hover, .onHover4:hover, .onHover:hover{
+        color: white;
+    }
+
+    .active5{
+        color: white !important;
+        background-color: rgb(19, 19, 19) !important;
+    }
+
+    .active5::after{
+        display: none;
+    }
+
+    .onHover1:hover::after, .onHover2:hover::after, .onHover3:hover::after, .onHover4:hover::after, .onHover:hover::after{
+        display: none;
+    }
+
+    .onHover{
+        position: absolute;
+        top: -27px !important;
+    }
+
+    .onHover2{
+        position: relative;
+        left: -185px;
+        top: 83px;
+    }
+
+    .onHover3{
+        position: relative;
+        top: 93px;
+    }
+
+    #top{
+        position: relative;
+        top: -110px;
+        left: 300px;
+    }
+
+    #middle{
+        position: relative;
+        left: 300px;
+        top: -103px;
+    }
+
+    #bottom{
+        position: relative;
+        left: 300px;
+        top: -96px;
+    }
+
+    .media_button{
+        display: block;
+    }
+
+   .nav-bar{
+        width: 100%;
+        margin-top: 65px;
+        height: 70px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+       overflow: visible;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+    
+    .nav div.main_list ul li a{
+        text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
 }
